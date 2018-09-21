@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
 
 ## Demo
-[View demo](https://cirych.github.io/ng-test-app/ng-test-app/movies)
+[View demo](https://cirych.github.io/ng-test-app/movies)
 
 ## Install locally
 
