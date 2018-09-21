@@ -5,8 +5,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Install locally
 
 ```
-git clone xxx
-cd xxx
+git clone https://github.com/Cirych/ng-test-app.git
+cd ng-test-app
 npm i
 ```
 
@@ -19,4 +19,4 @@ Navigate to [http://localhost:4200](http://localhost:4200)
 
 ## Build
 
-Run `npm ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `npm run build:prod` for a production build.
