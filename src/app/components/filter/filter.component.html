@@ -1,0 +1,8 @@
+<form [formGroup]="filters">
+  <input type="text" placeholder="search" formControlName="name" />
+  <select formControlName="genre">
+    <option value="">No selection</option>
+    <option *ngFor="let genre of genres" [ngValue]="genre">{{genre}}</option>
+  </select>
+  <button (click)="resetFilter()">✖️</button>
+</form>

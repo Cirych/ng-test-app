@@ -1,0 +1,25 @@
+@import '~src/styles/colors';
+@import '~src/styles/constants';
+
+:host {
+  display: block;
+  padding: $common-margin $large-margin;
+  background-color: $header-background;
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: $break-mid) {
+      flex-direction: column;
+      align-items: inherit;
+      > * {
+        margin: $vertical-margin 0;
+      }
+    }
+    input,
+    select {
+      min-width: $control-width;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import '~src/styles/colors';
+@import '~src/styles/constants';
+
+:host {
+  display: block;
+  background-color: $app-background;
+  min-height: 100vh;
+  padding: $common-margin;
+  section {
+    width: 750px;
+    margin: auto;
+    padding: $common-margin;
+    background-color: $app-child-background;
+    @media screen and (max-width: $break-large) {
+      width: 500px;
+    }
+    @media screen and (max-width: $break-mid) {
+      width: 400px;
+    }
+  }
+}

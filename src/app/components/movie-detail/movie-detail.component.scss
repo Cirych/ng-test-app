@@ -1,0 +1,42 @@
+@import '~src/styles/colors';
+@import '~src/styles/constants';
+
+:host {
+  display: block;
+  .card {
+    display: flex;
+    flex-direction: row;
+    > div {
+      padding: $common-margin;
+    }
+    .header,
+    .subheader {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      background-color: $header-background;
+      color: $header-color;
+      @media screen and (max-width: $break-mid) {
+        flex-direction: column;
+      }
+    }
+    .subheader {
+      padding: $common-margin;
+      .genres {
+        display: flex;
+        @media screen and (max-width: $break-large) {
+          flex-direction: column;
+        }
+        .genre {
+          margin: 5px;
+          padding: 5px;
+          border: 1px solid $header-color;
+        }
+      }
+    }
+    p {
+      color: $header-background;
+    }
+  }
+}
